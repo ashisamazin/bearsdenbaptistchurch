@@ -1,4 +1,3 @@
-
 :root {
     --primary: #2a7bbd;
     --secondary: #4bb174;
@@ -41,6 +40,9 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 0.5rem;
   }
   .nav-links a {
     text-decoration: none;
@@ -137,6 +139,11 @@
     }
     .hero-content .meeting-time {
       font-size: 1.6rem;
+    }
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-end;
+      width: auto;
     }
   }
   .quick-links {
@@ -263,6 +270,15 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
     }
+    .nav-links {
+      gap: 1.2rem;
+    }
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
   }
   @media (max-width: 600px) {
     .events-list {
@@ -355,18 +371,9 @@
   .social-links a:hover {
     color: var(--secondary);
   }
-  @media (max-width: 700px) {
-    .navbar, .events-list, .quick-links {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-    .navbar {
-      padding: 1rem;
-    }
-    .event-card, .quick-link {
-      min-width: 90vw;
-      max-width: 95vw;
+  @media (max-width: 900px) {
+    .navbar img {
+      height: 120px;
     }
   }
   .info-section {

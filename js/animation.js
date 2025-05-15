@@ -22,4 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add initial animations
     document.querySelector('.hero-content').classList.add('fade-in');
     document.querySelector('.navbar').classList.add('fade-in');
-    });
+});
