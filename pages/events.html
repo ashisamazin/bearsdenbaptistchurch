@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What We Believe - Bearsden Baptist Church</title>
+  <title>Events - Bearsden Baptist Church</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://apis.google.com/js/api.js"></script>
-  <script src="../js/youtube-videos.js"></script>
+  <script src="../js/animation.js"></script>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -40,21 +40,40 @@
 
   <section class="page-hero" style="background-image:url('../img/greg-rosenke-UTY4N-NU6Wg-unsplash.jpg'); background-size:cover; background-position:center;">
     <div class="hero-content">
-      <h1>What We Believe</h1>
+      <h1>Events</h1>
+      <p>What’s on at Bearsden Baptist Church</p>
     </div>
   </section>
 
   <main class="page">
-    <section>
-      <h2>Our beliefs</h2>
-      <p>We are a community centred on Jesus Christ, grounded in Scripture and shaped by the historic Christian faith. We affirm the authority of the Bible, the Trinity, salvation by grace through faith, believers’ baptism and the priesthood of all believers.</p>
-      <p>We seek to live out our faith together in worship, witness and service, empowered by the Holy Spirit.</p>
+
+    <section id="events-calendar" class="cy-section">
+      <div class="cy-hero" style="background-image:url('../../img/hero-bg.png');">
+        <div class="cy-hero-inner">
+          <h2>Events Calendar</h2>
+          <h3>See what's coming up</h3>
+        </div>
+      </div>
+      <div class="cy-body">
+        <div class="calendar-container" style="padding:0;">
+          <iframe src="https://bearsdenbaptistchurch.churchsuite.com/-/calendar/e8114cfa-e648-4f02-8fee-cf58754ac7de" style="width: 100%; height: 800px; border: none;" title="Bearsden Baptist Church Calendar"></iframe>
+        </div>
+      </div>
     </section>
 
-    <section class="videos-section" style="padding-top:0;">
-      <div class="videos-container">
-        <h2>Recent Services</h2>
-        <div class="videos-grid" id="videos-grid" data-max-results="6"></div>
+    <section id="well-come-cafe" class="cy-section">
+      <div class="cy-hero" style="background-image:url('../../img/helena-lopes-PGnqT0rXWLs-unsplash.jpg');">
+        <div class="cy-hero-inner">
+          <h2>The Well-Come Café</h2>
+          <h3>Wednesdays, 2–4pm</h3>
+        </div>
+      </div>
+      <div class="cy-body">
+        <p>The Well-Come café, named after John 4:1-42, is now open from 2-4pm every Wednesday, in Room 2 of Maxholme (the older section of the building).</p>
+        <p>The café is a loving, safe and non-judgemental place where everyone is accepted. There will be activities, crafts and refreshments provided but also simply the opportunity to rest and be human together.</p>
+        <p>A short time of prayer using Psalm 103 or the Lord’s Prayer, to which all are invited without obligation, will be offered at the end of each session and there will be the opportunity to signpost people to further helpful resources or agencies in the local community, if needed.</p>
+        <p>If you or anyone you know among friends, neighbours, family or colleagues are struggling with loneliness, weariness, grief, anxiety or depression, please know you are welcome here! All are welcome in the kingdom of God!</p>
+        <p>For more information, contact us.</p>
       </div>
     </section>
   </main>

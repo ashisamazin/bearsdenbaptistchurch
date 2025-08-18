@@ -1,7 +1,7 @@
 // YouTube API configuration
 const API_KEY = 'AIzaSyBV5FYCcV3QjBWfynrIvg5Q1Yw3_slFc9k';
 const CHANNEL_HANDLE = 'bearsdenbaptistchurch7645';
-const MAX_RESULTS = 3;
+let MAX_RESULTS = 3;
 
 // Function to initialize the YouTube API
 function initYouTubeAPI() {
@@ -9,6 +9,18 @@ function initYouTubeAPI() {
     apiKey: API_KEY,
     discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest']
   }).then(() => {
+    // Allow per-page override via data attribute on #videos-grid
+    try {
+      const grid = document.getElementById('videos-grid');
+      if (grid) {
+        const override = parseInt(grid.getAttribute('data-max-results') || '', 10);
+        if (!Number.isNaN(override) && override > 0 && override <= 50) {
+          MAX_RESULTS = override;
+        }
+      }
+    } catch (e) {
+      // no-op
+    }
     fetchChannelId();
   }).catch(error => {
     console.error('Error initializing YouTube API:', error);

@@ -536,3 +536,134 @@
       height: 500px;
     }
   }
+  .button-row {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+  .btn-outline {
+    background: #fff;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  /* Generic page layout */
+  .page-hero {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .page-hero .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem 1rem;
+  }
+  .subnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    margin: 1rem 0 2rem 0;
+  }
+  .subnav a {
+    text-decoration: none;
+    color: var(--dark);
+    background: #fff;
+    border: 1px solid rgba(34,48,74,0.1);
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  .subnav a:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+  }
+  .page h2 {
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    padding: 1.2rem;
+  }
+  @media (max-width: 900px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+  /* Children & Youth sections */
+  .cy-section {
+    margin: 3rem 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.18);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .cy-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 48px rgba(0,0,0,0.22), 0 6px 14px rgba(0,0,0,0.14);
+  }
+  .cy-hero {
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+  }
+  .cy-hero .cy-hero-inner {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%);
+    color: #fff;
+    padding: 2rem;
+  }
+  .cy-hero h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 2.4rem;
+  }
+  .cy-hero h3 {
+    color: #dfefff;
+    margin: 0.3rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .cy-body {
+    background: #fff;
+    padding: 1.5rem 2rem 2rem 2rem;
+  }
+  /* Distinct accents */
+  .cy-kidzone .cy-body { border-left: 6px solid #FFB703; }
+  .cy-catalyst .cy-body { border-left: 6px solid #8E44AD; }
+  .cy-monday .cy-body { border-left: 6px solid #2A9D8F; }
+  .cy-friday .cy-body  { border-left: 6px solid #E76F51; }
+  .cy-other .cy-body   { border-left: 6px solid #4bb174; }
