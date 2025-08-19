@@ -28,25 +28,6 @@ function initYouTubeAPI() {
   });
 }
 
-// // Function to fetch channel ID from handle
-// async function fetchChannelId() {
-//   try {
-//     const response = await gapi.client.youtube.channels.list({
-//       part: 'id',
-//       forHandle: CHANNEL_HANDLE
-//     });
-
-//     if (response.result.items && response.result.items.length > 0) {
-//       const channelId = response.result.items[0].id;
-//       fetchLatestVideos(channelId);
-//     } else {
-//       console.error('Channel not found');
-//     }
-//   } catch (error) {
-//     console.error('Error fetching channel ID:', error);
-//   }
-// }
-
 // Function to fetch the latest videos
 async function fetchLatestVideos() {
   try {
