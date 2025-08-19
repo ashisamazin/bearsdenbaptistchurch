@@ -59,11 +59,10 @@ async function fetchLatestVideos(channelId) {
 
     const videosGrid = document.getElementById('videos-grid');
     videosGrid.innerHTML = ''; // Clear existing content
-
     response.result.items.forEach(video => {
       const videoContainer = document.createElement('div');
       videoContainer.className = 'video-container';
-      
+
       const iframe = document.createElement('iframe');
       iframe.src = `https://www.youtube.com/embed/${video.id.videoId}`;
       iframe.title = video.snippet.title;
@@ -74,9 +73,30 @@ async function fetchLatestVideos(channelId) {
       videosGrid.appendChild(videoContainer);
     });
   } catch (error) {
+    // error getting recent videos so just fall back to default
     console.error('Error fetching videos:', error);
+
+    const defaultVideos = ['qbfiiSga_sw', 'hbZyJAaQlzQ', 'HOmvw3noQ8s']; 
+    populateVideos(defaultVideos);
   }
 }
 
+function populateVideos(videoIDs) {
+  const videosGrid = document.getElementById('videos-grid');
+  videosGrid.innerHTML = ''; // Clear existing content
+  videoIDs.forEach(videoID => {
+    const videoContainer = document.createElement('div');
+    videoContainer.className = 'video-container';
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoID}`;
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+
+    videoContainer.appendChild(iframe);
+    videosGrid.appendChild(videoContainer);
+  });
+
+}
 // Load the YouTube API
 gapi.load('client', initYouTubeAPI); 
