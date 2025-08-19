@@ -75,7 +75,7 @@
   }
   .hero {
     width: 100vw;
-    height: 400px;
+    height: 440px;
     position: relative;
     background: url('img/hero-bg.png') center center/cover no-repeat;
     display: flex;
@@ -113,15 +113,6 @@
     font-family: 'Garamond', cursive;
     font-size: 2.2rem;
     margin-top: 1rem;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    animation: fadeIn 1.2s ease-out 0.5s forwards;
-    opacity: 0;
-  }
-  .giving-text {
-    font-family: 'Garamond', cursive;
-    font-size: 2.2rem;
-    padding: 3rem;
     color: #fff;
     text-shadow: 0 2px 8px rgba(0,0,0,0.25);
     animation: fadeIn 1.2s ease-out 0.5s forwards;
@@ -563,7 +554,7 @@
   /* Generic page layout */
   .page-hero {
     width: 100%;
-    height: 280px;
+    height: 440px;
     position: relative;
     background: var(--dark);
     display: flex;
