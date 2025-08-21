@@ -122,9 +122,8 @@
 
   .what-to-expect {
     width: 100vw;
-    height: 800px;
     position: relative;
-    background: url('https://images.unsplash.com/photo-1477281765962-ef34e8bb0967') center center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1533000759938-aa0ba70beceb?q=10') center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,6 +141,7 @@
     z-index: 2;
     text-align: center;
     color: #fff;
+    padding: 5%;
   }
   .what-to-expect-content h1 {
     font-size: 3.5rem;
