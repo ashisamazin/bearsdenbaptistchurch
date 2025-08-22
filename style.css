@@ -689,10 +689,5 @@
   .cy-body {
     background: #fff;
     padding: 1.5rem 2rem 2rem 2rem;
+    border-left: 6px solid #8E44AD;
   }
-  /* Distinct accents */
-  .cy-kidzone .cy-body { border-left: 6px solid #FFB703; }
-  .cy-catalyst .cy-body { border-left: 6px solid #8E44AD; }
-  .cy-monday .cy-body { border-left: 6px solid #2A9D8F; }
-  .cy-friday .cy-body  { border-left: 6px solid #E76F51; }
-  .cy-other .cy-body   { border-left: 6px solid #4bb174; }
