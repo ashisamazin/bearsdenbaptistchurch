@@ -209,7 +209,6 @@
     color: var(--primary);
     margin-bottom: 2.5rem;
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
     position: relative;
     padding-bottom: 1rem;
   }
@@ -328,7 +327,6 @@
     color: var(--primary);
     margin-bottom: 2rem;
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
     position: relative;
     padding-bottom: 1rem;
   }
@@ -439,7 +437,6 @@
   }
   .info-box h2 {
     color: white;
-    font-family: 'Playfair Display', serif;
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -533,7 +530,6 @@
     margin-bottom: 2rem;
     color: var(--primary);
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
     position: relative;
     padding-bottom: 1rem;
   }
@@ -564,30 +560,6 @@
     .calendar-container iframe {
       height: 500px;
     }
-  }
-  .button-row {
-    display: flex;
-    gap: 0.8rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-  }
-  .btn {
-    display: inline-block;
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    border: 1px solid transparent;
-  }
-  .btn-primary {
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
-  }
-  .btn-outline {
-    background: #fff;
-    color: var(--primary);
-    border-color: var(--primary);
   }
   /* Generic page layout */
   .page-hero {
@@ -629,7 +601,6 @@
   }
   .page h2 {
     color: var(--primary);
-    font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
   }
   .cards {
