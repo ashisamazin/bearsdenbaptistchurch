@@ -325,6 +325,11 @@
     background: var(--secondary);
     border-radius: 2px;
   }
+  .videos-section p {
+    text-align: center;
+    padding: 1.8rem;
+    font-size: 1.8rem;
+  }
   .videos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -388,7 +393,7 @@
     }
   }
   .info-section {
-    background-color: #2a7bbd;
+    background-color: #1f527b;
     padding: 6rem 1rem;
     color: white;
   }
