@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Giving</title>
+  <title>Community - Bearsden Baptist Church</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://apis.google.com/js/api.js"></script>
+  <script src="../js/youtube-videos.js"></script>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -37,26 +38,23 @@
     </nav>
   </header>
 
-  <section class="page-hero" style="background-image:url('https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?q=10'); background-size:cover; background-position:center;">
+  <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=10'); background-size:cover; background-position:center;">
     <div class="hero-content">
-      <h1>Giving</h1>
-      <p>Your Gifts Make a Difference</p> 
+      <h1>Sermons</h1>
+      <p>Watch Our Latest Sermons</p>
     </div>
   </section>
 
   <main class="page">
-    <section>
-      <h2>Give by bank transfer</h2>
-      <p>Your financial support for Bearsden Baptist Church empowers our continued pursuit of God's mission to help as many people as possible discover and embrace His love and truth.</p>
-      <p>We accept donations during our Sunday service, both via Cash and a contactless card machine. </p>
-      <p>To give via your bank, please use the details below:</p>
-      <div class="card">
-        <p><strong>Account Name:</strong> Bearsden Baptist Church</p>
-        <p><strong>Sort Code:</strong> 82-12-08</p>
-        <p><strong>Account Number:</strong> 20016183</p>
+    
+    <section class="videos-section" style="padding-top:0;">
+      <h2>Recent Services</h2>
+      <div class="videos-container">
+        <div class="videos-grid" id="videos-grid" data-max-results="6"></div>
       </div>
     </section>
-  </main>
+  
+
 
   <footer>
     <div class="footer-info">
@@ -87,3 +85,4 @@
   </footer>
 </body>
 </html>
+
