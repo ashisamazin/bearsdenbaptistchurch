@@ -436,7 +436,7 @@
     line-height: 1.8;
     margin: 0;
   }
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .info-container {
       grid-template-columns: 1fr;
       gap: 3rem;
@@ -447,7 +447,7 @@
     .info-image {
       height: 150px;
     }
-  }
+  } */
   /* Add animation keyframes */
   @keyframes fadeInUp {
     from {
