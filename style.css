@@ -394,15 +394,15 @@
   }
   .info-section {
     background-color: #1f527b;
-    padding: 6rem 1rem;
+    padding: 6rem 4rem;
     color: white;
   }
   .info-container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
   .info-box {
     padding: 0;
