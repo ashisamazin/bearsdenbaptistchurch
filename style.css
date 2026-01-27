@@ -332,12 +332,10 @@
   }
   .videos-section a {
     text-align: center;
-    padding-top: 1.8rem;
-    width: 100%;
-    font-size: 1.8rem;
+    padding-top: 5rem;
+    font-size: 2.2rem;
     color: var(--secondary);
-    position: absolute;
-
+    display: block;
   }
   .videos-grid {
     display: grid;
